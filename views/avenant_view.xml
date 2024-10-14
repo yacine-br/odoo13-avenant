@@ -1,0 +1,12 @@
+<odoo>
+    <record id="avenant_view" model="ir.ui.view">
+        <field name="name">sale.avenant.view</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button type="object" name="action_ajouter_avenant" string="Ajouter un avenant" class="btn-primary"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
