@@ -4,10 +4,10 @@
     'category': 'sale',
     'summary': 'Modification du devis',
     'author': 'Yacine BENAMMAR',
-    'maintainer': 'Yacine BENAMMAR',  # responsible for module maintenance
-    'depends': ['sale'],
+    'maintainer': 'Yacine BENAMMAR',
+    'depends': ['sale', 'sale_stock'],
     'data': [
-        'views/avenant_view.xml',
+        'views/avenant_view_menu.xml',
     ],
     'installable': True,
     'application': False,

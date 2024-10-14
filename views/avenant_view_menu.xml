@@ -1,0 +1,22 @@
+<odoo>
+    <record id="avenant_view" model="ir.ui.view">
+        <field name="name">sale.avenant.view</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale_stock.view_order_form_inherit_sale_stock"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button type="action" name="action_avenant_form" string="Ajouter un avenant"/>
+            </xpath>
+
+            <xpath expr="//div[@name='button_box']/button[@name='preview_sale_order']" position="after">
+                <button class="oe_stat_button" type="object" icon="fa-solid fa-bars">
+                    Avenants
+                </button>
+            </xpath>
+
+            <xpath expr="//div[@name='button_box']/button[@name='action_view_delivery']/field[@name='delivery_count']" position="attributes">
+                <attribute name="string">Attachments</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
